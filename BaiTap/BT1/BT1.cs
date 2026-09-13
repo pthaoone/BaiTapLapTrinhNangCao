@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program
+class BT1
 {
     static void Main()
     {
