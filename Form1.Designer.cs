@@ -1,4 +1,4 @@
-﻿namespace QuanlySinhVienApp
+namespace QuanlySinhVienApp
 {
     partial class Form1
     {
