@@ -2,14 +2,7 @@ namespace QuanlySinhVienApp
 {
     partial class srmquanlysinhvien
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
@@ -580,6 +573,7 @@ namespace QuanlySinhVienApp
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(960, 164);
             dataGridView1.TabIndex = 19;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // lblFooterRight
             // 
@@ -621,6 +615,7 @@ namespace QuanlySinhVienApp
             Name = "srmquanlysinhvien";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ứng dụng quản lý sinh viên";
+            Load += srmquanlysinhvien_Load_1;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numberdiem).EndInit();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
-namespace QuanlySinhVienApp.Entity
+namespace QuanlySinhVienApp.Data.Entity
 {
     public class SinhVien
     {

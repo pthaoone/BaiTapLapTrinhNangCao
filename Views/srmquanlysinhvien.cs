@@ -1,4 +1,4 @@
-using QuanlySinhVienApp.Entity;
+using QuanlySinhVienApp.Data.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -176,7 +176,7 @@ namespace QuanlySinhVienApp
             {
                 DataPropertyName = "GioiTinh",
                 HeaderText = "Giới tính",
-                Width = 75
+                Width = 100
             });
 
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
@@ -622,7 +622,7 @@ namespace QuanlySinhVienApp
 
         private void buttonThem_Click_1(object sender, EventArgs e)
         {
-
+            
         }
 
         private void lblBatBuoc_Click(object sender, EventArgs e)
@@ -638,6 +638,27 @@ namespace QuanlySinhVienApp
         private void lblFooterLeft_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void srmquanlysinhvien_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+        private class StudentView
+        {
+            public string StudentId { get; set; } = string.Empty;
+            public string FullName { get; set; } = string.Empty;
+            public string Email { get; set; } = string.Empty;
+            public string DateOfBirth { get; set; } = string.Empty;
+            public string Phone { get; set; } = string.Empty;
+            public double Score { get; set; }
+            public string Status { get; set; } = string.Empty;
+            public string Classes { get; set; } = string.Empty;
         }
     }
 }
