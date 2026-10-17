@@ -8,7 +8,7 @@ namespace QuanlySinhVienApp.Data.Entity
     public class SinhVien
     {
         [Required(ErrorMessage = "Mã sinh viên không được để trống.")]
-        [RegularExpression(@"^SV\d{6,8}$", ErrorMessage = "Mã sinh viên phải có dạng SV kèm 6 đến 8 chữ số (ví dụ: SV000123).")]
+        [RegularExpression(@"^SV\d{3,8}$", ErrorMessage = "Mã sinh viên phải có dạng SV kèm 3 đến 8 chữ số (ví dụ: SV001 hoặc SV000123).")]
         public string MaSV { get; set; } = string.Empty;
 
         // Cho phép truy cập qua maSV tương thích mã cũ
@@ -26,7 +26,7 @@ namespace QuanlySinhVienApp.Data.Entity
         public DateTime NgaySinh { get; set; } = new DateTime(2006, 1, 1);
 
         [Required(ErrorMessage = "Vui lòng chọn giới tính.")]
-        [RegularExpression(@"^(Nam|Nữ|Khác)$", ErrorMessage = "Giới tính phải là 'Nam', 'Nữ' hoặc 'Khác'.")]
+        [RegularExpression(@"^(Nam|Nữ|Khác|Nu)$", ErrorMessage = "Giới tính phải là 'Nam', 'Nữ' hoặc 'Khác'.")]
         public string GioiTinh { get; set; } = "Nam";
 
         [Required(ErrorMessage = "Email không được để trống.")]
@@ -46,6 +46,13 @@ namespace QuanlySinhVienApp.Data.Entity
 
         // Cho phép truy cập qua Dienthoai tương thích mã cũ
         public string Dienthoai
+        {
+            get => DienThoai;
+            set => DienThoai = value;
+        }
+
+        // Cho phép truy cập qua SoDienThoai tương thích mã đề bài
+        public string SoDienThoai
         {
             get => DienThoai;
             set => DienThoai = value;

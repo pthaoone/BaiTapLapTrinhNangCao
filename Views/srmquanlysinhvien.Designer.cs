@@ -157,6 +157,7 @@ namespace QuanlySinhVienApp
             buttonLamMoi.TabIndex = 13;
             buttonLamMoi.Text = "Làm mới";
             buttonLamMoi.UseVisualStyleBackColor = false;
+            buttonLamMoi.Click += buttonLamMoi_Click;
             // 
             // buttonXoa
             // 
@@ -172,6 +173,7 @@ namespace QuanlySinhVienApp
             buttonXoa.TabIndex = 12;
             buttonXoa.Text = "Xóa";
             buttonXoa.UseVisualStyleBackColor = false;
+            buttonXoa.Click += buttonXoa_Click;
             // 
             // buttonSua
             // 
@@ -403,6 +405,7 @@ namespace QuanlySinhVienApp
             buttonHienthi.TabIndex = 18;
             buttonHienthi.Text = "Hiển thị tất cả";
             buttonHienthi.UseVisualStyleBackColor = false;
+            buttonHienthi.Click += buttonHienthi_Click;
             // 
             // buttonTimkiem
             // 
@@ -418,6 +421,7 @@ namespace QuanlySinhVienApp
             buttonTimkiem.TabIndex = 17;
             buttonTimkiem.Text = "Tìm kiếm";
             buttonTimkiem.UseVisualStyleBackColor = false;
+            buttonTimkiem.Click += buttonTimkiem_Click;
             // 
             // txtdemtu
             // 
